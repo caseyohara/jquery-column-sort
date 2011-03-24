@@ -4,6 +4,5 @@ Rearranges lists with floated elements in order to properly alphabetize them. Th
 
 ## Credits
 
-outerHTML by [Brandon Aaron](http://github.com/brandonaaron/jquery-outerhtml)
-
-Letterpressed Alphabet by [Jessica Hische](http://buystufffrom.jessicahische.com/category/letterpress-prints)
+* outerHTML by [Brandon Aaron](http://github.com/brandonaaron/jquery-outerhtml)
+* Letterpressed Alphabet by [Jessica Hische](http://buystufffrom.jessicahische.com/category/letterpress-prints)
