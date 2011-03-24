@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>jQuery Column Sort Demo</title>
+	<meta charset="utf-8"/>
+	<link href="css/screen.css" media="screen" rel="Stylesheet"/>
+</head>
+
+<body>
+
+	<div id="content" class="autoclear">
+		<p>Number of columns: <input type="text" name="numberOfColumns" value="4" id="numberOfColumns" style="width:35px" /> <input id="sort-it" type="submit" value="Sort Them" class="submit"/> <em>Note: You must refresh the page to start over.</em></p>
+		<ul id="needs-sorting" class="autoclear">
+			<li id="item-1"><a href="images/a-big.jpg"><img src="images/a.jpg" /></a></li>
+			<li id="item-2"><a href="images/b-big.jpg"><img src="images/b.jpg" /></a></li>
+			<li id="item-3"><a href="images/c-big.jpg"><img src="images/c.jpg" /></a></li>
+			<li id="item-4"><a href="images/d-big.jpg"><img src="images/d.jpg" /></a></li>
+			<li id="item-5"><a href="images/e-big.jpg"><img src="images/e.jpg" /></a></li>
+			<li id="item-6"><a href="images/f-big.jpg"><img src="images/f.jpg" /></a></li>
+			<li id="item-7"><a href="images/g-big.jpg"><img src="images/g.jpg" /></a></li>
+			<li id="item-8"><a href="images/h-big.jpg"><img src="images/h.jpg" /></a></li>
+			<li id="item-9"><a href="images/i-big.jpg"><img src="images/i.jpg" /></a></li>
+			<li id="item-10"><a href="images/j-big.jpg"><img src="images/j.jpg" /></a></li>
+			<li id="item-11"><a href="images/k-big.jpg"><img src="images/k.jpg" /></a></li>
+			<li id="item-12"><a href="images/l-big.jpg"><img src="images/l.jpg" /></a></li>
+			<li id="item-13"><a href="images/m-big.jpg"><img src="images/m.jpg" /></a></li>
+			<li id="item-14"><a href="images/n-big.jpg"><img src="images/n.jpg" /></a></li>
+			<li id="item-15"><a href="images/o-big.jpg"><img src="images/o.jpg" /></a></li>
+			<li id="item-16"><a href="images/p-big.jpg"><img src="images/p.jpg" /></a></li>
+			<li id="item-17"><a href="images/q-big.jpg"><img src="images/q.jpg" /></a></li>
+			<li id="item-18"><a href="images/r-big.jpg"><img src="images/r.jpg" /></a></li>
+			<li id="item-19"><a href="images/s-big.jpg"><img src="images/s.jpg" /></a></li>
+			<li id="item-20"><a href="images/t-big.jpg"><img src="images/t.jpg" /></a></li>
+			<li id="item-21"><a href="images/u-big.jpg"><img src="images/u.jpg" /></a></li>
+			<li id="item-22"><a href="images/v-big.jpg"><img src="images/v.jpg" /></a></li>
+			<li id="item-23"><a href="images/w-big.jpg"><img src="images/w.jpg" /></a></li>
+			<li id="item-24"><a href="images/x-big.jpg"><img src="images/x.jpg" /></a></li>
+			<li id="item-25"><a href="images/y-big.jpg"><img src="images/y.jpg" /></a></li>
+			<li id="item-26"><a href="images/z-big.jpg"><img src="images/z.jpg" /></a></li>
+		</ul>
+	
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+		<script src="scripts/jquery.column.sort.js"></script>
+	
+		<script type="text/javascript" charset="utf-8">
+			$('#sort-it').click(function() {
+				var numberOfColumns = $('#numberOfColumns').val();
+				$('ul#needs-sorting').columnsort({ 'columns' : numberOfColumns });
+				$('ul li:nth-child(' + numberOfColumns + 'n+1)').addClass('clear');
+			});
+		</script>
+	</div><!-- end content -->
+
+</body>
+</html>

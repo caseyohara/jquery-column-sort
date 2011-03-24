@@ -1,0 +1,102 @@
+/* ------------------------------------------------------------
+
+	* jQuery Column Sort Demo
+	* Coded by Taylor Smith
+
+------------------------------------------------------------ */
+
+/* =Include External CSS Files
+------------------------------------------------------------ */
+
+@import url('reset.css');
+
+
+/* =Initial Page Structure
+------------------------------------------------------------ */
+
+html {
+	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	color: #555;
+	background: #eee;
+}
+
+body {
+	position: relative;
+	line-height: 1.5;
+	padding: 20px;
+}
+
+#content {
+	position: relative;
+}
+
+
+/* =Basic Element Styles
+------------------------------------------------------------ */
+
+p {
+	padding-bottom: 18px;
+}
+
+img,
+a img {
+	border: 0;
+	vertical-align: middle;
+}
+
+a {
+	color: #f0f;
+}
+
+a:visited {
+	color: #f0f;
+}
+
+a:hover {
+	color: #f00;
+	text-decoration: none;
+}
+
+em {
+	font-style: italic;
+}
+
+
+/* =Utilities
+------------------------------------------------------------ */
+
+.clear					 { clear: both; }
+.autoclear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.autoclear			 { display: inline-block; }
+.autoclear			 { display: block; }
+
+
+/* =Layout and Function
+------------------------------------------------------------ */
+
+	/* =Content
+------------------------------------------------------------ */
+
+#content ul {
+	float: left;
+}
+
+#content ul li {
+	float: left;
+	margin: 0 10px 20px 10px;
+}
+
+#content ul li a {
+	float: left;
+	width: 175px;
+	height: 175px;
+	padding: 20px;
+	background: #fff;
+	-webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+}
+
+#content ul li a:hover {
+	-moz-box-shadow: 0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px #ccc;
+}
